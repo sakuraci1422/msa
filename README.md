@@ -1,12 +1,20 @@
 
    6 docker commit ubuntu:soo
+   
    7 docker commit soo2 ubuntu:soo
+   
    8 docker images
+   
   10 docker save ubuntu:soo -o ubuntu_soo.docker
+  
   16 docker ps -a
+  
   25 docker load ubuntu_soo.docker
+  
   41 docker load -i ubuntu_soo.docker
+  
   42 docker images
+  
   43 docker run exec -it --name sooo ubuntu
 
   47 docker exex -it sooo bash
@@ -17,12 +25,14 @@
 
 
  101  docker run -d --name soo1 --rm -v C://Users//kITRI//df:/df -p 8080:80 nginx
+ 
  102 docker exec -it soo1
+ 
  103 docker exec -it soo1 bash
 
 
  121 docker commit u1 sakuraci81/ubuntu:v1
- 122 docker push nowage/ubuntu:v1
+
  123 docker login
  124 docker push sakuraci81/ubuntu:v1
 
