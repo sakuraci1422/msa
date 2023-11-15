@@ -18,6 +18,9 @@ docker run -it --name u2 --rm  ubuntu # 컨테이너가 죽을때 지워짐.
 ```
 mkdir df
 docker run -it --name u2 --rm  -v c:\\Users\\KITRI\\df:/df ubuntu
+
+docker run -it --name u3 -v .\df:/df ubuntu:v1 < 형태도 되네요..
+
 ```
 ### Port Mapping
 ```
