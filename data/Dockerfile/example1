@@ -1,5 +1,0 @@
-from ubuntu
-run apt update -y
-run apt install -y tree
-workdir C:\Users\KITRI
-env x=3
