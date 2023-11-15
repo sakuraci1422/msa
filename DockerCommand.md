@@ -94,7 +94,16 @@ docker login
 docker push 아이디/ubuntu:v1
 
 ```
-
+## Volume
+```
+docker volume create v1
+docker volume ls
+docker run -it -v v1:/v1 --name u4 --rm ubuntu
+    touch /v1/xx
+    exit
+docker run -it -v v1:/v1 --name u4 --rm ubuntu
+    ls /v1
+```
 
 # 연습문제
 ## 1. -v 옵션을 통해 c:\\Users\\KITRI\\df를   /usr/share/nginx/html/ 에 연동해서 윈도우에서 html파일을 수정하면 nginx에서 적용되도록 컨테이너를 만들어 보세요. host os Port는 8880임.
